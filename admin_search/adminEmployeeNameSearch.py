@@ -36,21 +36,6 @@ menu_item = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XP
 menu_item.click()
 time.sleep(1)
 
-# You can add additional code here to verify that the navigation was successful
-
-username_system = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input")))
-
-username_system.send_keys("Admin")
-
-# user role
-wait = WebDriverWait(driver, 10)
-user_role = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div')))
-user_role.click()
-
-user_role_second = driver.find_elements(By.XPATH , "//div[@role='listbox']/div")
-user_role_ess = user_role_second[1]
-
-user_role_ess.click()
 
 
 # employee name
@@ -65,24 +50,16 @@ auto_complete = WebDriverWait(driver, 5).until(EC.presence_of_element_located((B
 auto_complete.click()
 
 
-# status
-wait = WebDriverWait(driver, 10)
-status = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[2]/i')))
-status.click()
-
-status_second = driver.find_elements(By.XPATH , "//div[@role='listbox']/div")
-status_disabled = status_second[1]
-
-status_disabled.click()
 
 
-time.sleep(5)
+
+time.sleep(1)
 search_btn = driver.find_element(By.XPATH, "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]")
 
 search_btn.click()
 
 
-time.sleep(5)
+time.sleep(2)
 
 # Close the browser
 driver.quit()

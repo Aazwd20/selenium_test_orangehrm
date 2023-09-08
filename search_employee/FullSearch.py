@@ -32,15 +32,24 @@ time.sleep(1)
 
 # Navigate to a different page by clicking on a menu item
 # Note: The XPath here is just a placeholder. You'll need to inspect the page to find the correct XPath.
-menu_item = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a")))
+menu_item = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a")))
+menu_item.click()
+time.sleep(1)
+
+menu_item = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]")))
 menu_item.click()
 time.sleep(1)
 
 # You can add additional code here to verify that the navigation was successful
 
-username_system = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input")))
+Employee_name = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input")))
 
-username_system.send_keys("Admin")
+Employee_name.send_keys("As")
+
+wait = WebDriverWait(driver, 10)
+auto_complete = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH , "//div[@role='listbox']")))
+
+auto_complete.click()
 
 # user role
 wait = WebDriverWait(driver, 10)
@@ -58,7 +67,7 @@ wait = WebDriverWait(driver, 10)
 employee_name = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[3]/div/div[2]/div/div/input")))
 employee_name.send_keys("Asif Al")
 
-time.sleep(3)
+
 wait = WebDriverWait(driver, 10)
 auto_complete = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH , "//div[@role='listbox']")))
 

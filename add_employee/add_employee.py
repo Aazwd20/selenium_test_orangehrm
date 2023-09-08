@@ -105,7 +105,8 @@ username_field.send_keys("madaraX_Uchiha")
 time.sleep(1)
 password_field.send_keys("Madara123#")
 time.sleep(1)
-
+#Obito_Uchiha
+#Obito123#
 # Find the login button and click it
 
 login_button.click()
