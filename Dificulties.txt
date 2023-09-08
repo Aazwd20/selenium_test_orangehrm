@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 For applying for leave the ADMIN has to add leave types
 link: http://localhost/orangehrm-5.5/web/index.php/leave/leaveTypeList
 
 And cant apply for leave heve to assign leave from admin.
+=======
+For applying for leave the ADMIN has to add leave types
+link: http://localhost/orangehrm-5.5/web/index.php/leave/leaveTypeList
+
+And cant apply for leave heve to assign leave from admin.
+>>>>>>> bd0f5851d9f49498316355b5e6945c06423f367f
 link:http://localhost/orangehrm-5.5/web/index.php/leave/assignLeave

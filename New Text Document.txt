@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Create_vacancy_admin		successful
 Create_existin_vacancy_admin	successful
 
+=======
+Create_vacancy_admin		successful
+Create_existin_vacancy_admin	successful
+
+>>>>>>> bd0f5851d9f49498316355b5e6945c06423f367f
